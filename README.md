@@ -1,1 +1,1 @@
-## EKS + App + API + MsSQL  (Docker)
+## EKS + App + API + AWS RDS
