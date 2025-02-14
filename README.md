@@ -20,6 +20,9 @@ docker run -it  nicolaka/netshoot sh
 kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot
 ```
 ```
+kubectl exec -it car-web-deploy-69b77b8b8d-rztrw sh
+```
+```
 docker-compose build --no-cache --pull
 docker build --pull --no-cache --tag myimage:version .
 ```
