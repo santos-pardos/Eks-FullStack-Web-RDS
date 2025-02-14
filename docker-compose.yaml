@@ -1,11 +1,11 @@
 version: '3'
 services:
-  api:
+  web:
     build: ./FrontEnd/
     container_name: car-web
     ports: 
       - "80:80"
-  web:
+  api:
     build: ./BackEnd/
     container_name: car-api
     ports: 
