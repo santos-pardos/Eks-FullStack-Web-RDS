@@ -22,3 +22,7 @@ docker run -it  nicolaka/netshoot sh
 ```
 kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot
 ```
+```
+docker-compose build --no-cache --pull
+docker build --pull --no-cache --tag myimage:version .
+```
