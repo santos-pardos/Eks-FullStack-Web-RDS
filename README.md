@@ -28,6 +28,9 @@ docker build --pull --no-cache --tag myimage:version .
 ```
 # Visual Studio Code Webserver URL
 ```
+https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Containers/Vsc_Web_Ec2
+```
+```
 https://vscode.dev/tunnel/vscode-demo-tunnel
 ```
 
