@@ -12,7 +12,6 @@ https://dbeaver.io/download/
 ```
 
 ## Tools
-## Tools
 ```
 docker run --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
 ```
