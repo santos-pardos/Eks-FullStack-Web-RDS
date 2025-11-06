@@ -12,7 +12,8 @@ https://dbeaver.io/download/
 ```
 sudo dnf install docker -y
 sudo systemctl start docker
-sudo systemctl enalbe docker
+sudo systemctl enable docker
+sudo dnf install git -y
 sudo usermod -aG docker $USER
 ```
 ```
