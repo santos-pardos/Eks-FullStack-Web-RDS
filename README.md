@@ -8,7 +8,26 @@ DBeaver Community 24.3.4  (Portable: Zip file)
 ```
 https://dbeaver.io/download/
 ```
-
+# Docker - Docker-compose - Buildx
+```
+sudo dnf install docker -y
+sudo systemctl start docker
+sudo systemctl enalbe docker
+sudo usermod -aG docker $USER
+```
+```
+sudo curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
+sudo chmod +x docker-compose-linux-x86_64
+sudo mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose
+docker-compose --version
+```
+```
+mkdir -p ~/.docker/cli-plugins
+curl -L https://github.com/docker/buildx/releases/download/v0.17.0/buildx-v0.17.0.linux-amd64 \
+  -o ~/.docker/cli-plugins/docker-buildx
+chmod +x ~/.docker/cli-plugins/docker-buildx
+docker buildx version
+```
 # Tools
 ```
 docker run --name cloudbeaver --rm -ti -d -p 8080:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
