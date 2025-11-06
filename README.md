@@ -26,6 +26,10 @@ kubectl exec -it car-web-deploy-69b77b8b8d-rztrw sh
 docker-compose build --no-cache --pull
 docker build --pull --no-cache --tag myimage:version .
 ```
+## DBeaver
+```
+docker run -d --name cloudbeaver --rm -ti -p 80:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
+```
 # Visual Studio Code Webserver URL
 ```
 https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Containers/Vsc_Web_Ec2
