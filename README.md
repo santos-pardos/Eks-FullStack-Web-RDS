@@ -24,6 +24,9 @@ kubectl exec -it car-web-deploy-69b77b8b8d-rztrw sh
 ```
 ```
 docker-compose build --no-cache --pull
+docker-compose up -d
+docker-compose down
+docker rmi $(docker images -q)
 docker build --pull --no-cache --tag myimage:version .
 ```
 ## DBeaver
