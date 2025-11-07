@@ -49,10 +49,7 @@ docker-compose down
 docker rmi $(docker images -q)
 docker build --pull --no-cache --tag myimage:version .
 ```
-## DBeaver
-```
-docker run -d --name cloudbeaver --rm -ti -p 80:8978 -v /opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest
-```
+
 # Visual Studio Code Webserver URL
 ```
 https://github.com/santos-pardos/Hands-On-Lab-in-AWS/tree/main/Containers/Vsc_Web_Ec2
