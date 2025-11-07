@@ -8,7 +8,7 @@ DBeaver Community 24.3.4  (Portable: Zip file)
 ```
 https://dbeaver.io/download/
 ```
-# Docker - Docker-compose - Buildx
+# Docker - Docker-compose - Buildx - AMI Linux 2023
 ```
 sudo dnf install docker -y
 sudo systemctl start docker
